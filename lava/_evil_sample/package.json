@@ -1,0 +1,13 @@
+{
+  "name": "evil_sample",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "entropoetry": "^2.0.0-alpha4"
+  }
+}

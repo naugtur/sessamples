@@ -1,0 +1,16 @@
+{
+  "name": "lava",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lavamoat": "^6.2.0"
+  },
+  "dependencies": {
+    "evil_sample": "file:_evil_sample/evil_sample-1.0.0.tgz"
+  }
+}
