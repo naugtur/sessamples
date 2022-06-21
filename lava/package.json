@@ -1,9 +1,11 @@
 {
-  "name": "lava",
+  "name": "lava-sample",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+    "start": "lavamoat app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
