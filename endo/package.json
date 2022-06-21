@@ -1,14 +1,16 @@
 {
-  "name": "lava",
+  "name": "endo",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "scripts": {},
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lavamoat": "^6.2.0"
+    "@endo/compartment-mapper": "^0.7.6"
   },
   "dependencies": {
     "evil_sample": "file:../.evil_sample/evil_sample-1.0.0.tgz"
