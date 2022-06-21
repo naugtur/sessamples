@@ -9,15 +9,15 @@ import fs from 'fs';
 import assert from 'assert';
 import zlib from 'zlib';
 
-const read = async (location) =>
+const readPower = async (location) =>
   fs.promises.readFile(new URL(location).pathname);
 
 const entrypointPath = new URL('./app.js', import.meta.url).href
 
-const ApiSubsetOfBuffer = { from: Buffer.from }
+const ApiSubsetOfBuffer = harden({ from: Buffer.from })
 
 const { namespace } = await importLocation(
-  read, 
+  readPower, 
   entrypointPath, 
   {
     globals: {
@@ -25,7 +25,7 @@ const { namespace } = await importLocation(
     },
     modules: {
       assert: await addToCompartment('assert', assert),
-      buffer: await addToCompartment('buffer', ApiSubsetOfBuffer),
+      buffer: await addToCompartment('buffer', Object.create(null)), //imported but unused
       zlib: await addToCompartment('zlib', zlib),
     },
 });
