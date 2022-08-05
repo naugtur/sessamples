@@ -2,7 +2,7 @@ const Poet = require("entropoetry");
 
 
 
-module.exports = function endulgeMeWithAPoem(
+module.exports = function indulgeMeWithAPoem(
   data = "1cd543bb7110a3a2ec49cbe0eb321232622f6b3d2abaec57466bae0b4085c9c8"
   ) {
         

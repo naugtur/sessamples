@@ -1,3 +1,3 @@
-const endulgeMeWithAPoem = require('evil_sample');
+const indulgeMeWithAPoem = require('evil_sample');
 
-exports.poem = endulgeMeWithAPoem();
+exports.poem = indulgeMeWithAPoem();
