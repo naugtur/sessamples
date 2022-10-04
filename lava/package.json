@@ -10,9 +10,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@lavamoat/allow-scripts": "^2.0.3",
     "lavamoat": "^6.2.0"
   },
   "dependencies": {
+    "@lavamoat/preinstall-always-fail": "^1.0.0",
     "evil_sample": "file:../.evil_sample/evil_sample-1.0.0.tgz"
+  },
+  "lavamoat": {
+    "allowScripts": {
+      "@lavamoat/preinstall-always-fail": false
+    }
   }
 }
